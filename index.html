@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4e8">
+  <meta name="description" content="Honey Bee — น้ำผึ้งธรรมชาติ น้ำผึ้งดอกลำไยและน้ำผึ้งป่า">
+  <title>Honey Bee | หอมหวานจากธรรมชาติ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Honey Bee หน้าแรก">
+      <span class="brand-bee" aria-hidden="true">🐝</span>
+      <span>honey <b>bee</b><small>PURE HONEY · NATURAL GOODNESS</small></span>
+    </a>
+    <nav class="main-nav" aria-label="เมนูหลัก">
+      <a href="#home">หน้าแรก</a>
+      <a href="#products">สินค้า</a>
+      <a href="#story">เรื่องราวของเรา</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+    <a class="cart-link" href="#order">ตะกร้าสินค้า <span id="cart-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">A LITTLE SWEETNESS FROM NATURE</p>
+        <h1>ความหวานจากธรรมชาติ<br><em>ในทุกวันของคุณ</em></h1>
+        <p class="hero-description">ค้นพบความหอมหวานของน้ำผึ้ง Honey Bee คัดสรร 2 รสสัมผัสจากธรรมชาติ เพื่อเติมความละมุนให้ทุกช่วงเวลา</p>
+        <a class="button button-primary" href="#products">เลือกช้อปสินค้า <span>→</span></a>
+        <div class="hero-note"><span>✦</span> หอมหวาน · อบอุ่น · เรียบง่ายจากธรรมชาติ</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-glow"></div>
+        <img src="images/longan-honey.png" alt="น้ำผึ้งดอกลำไย Honey Bee">
+        <div class="hero-sticker">Pure<br><b>&</b><br>Natural</div>
+      </div>
+      <span class="hero-leaf leaf-one">✳</span>
+      <span class="hero-leaf leaf-two">✦</span>
+    </section>
+
+    <section class="promise-strip" aria-label="จุดเด่นของแบรนด์">
+      <div><span>✿</span><b>แรงบันดาลใจจากธรรมชาติ</b></div>
+      <div><span>☀</span><b>ความหวานในแบบเรียบง่าย</b></div>
+      <div><span>♡</span><b>ใส่ใจในทุกรายละเอียด</b></div>
+    </section>
+
+    <section class="products-section section-wrap" id="products">
+      <div class="section-heading">
+        <p class="eyebrow">OUR HONEY COLLECTION</p>
+        <h2>เลือกความหวานที่ใช่ <em>สำหรับคุณ</em></h2>
+        <p>สองเอกลักษณ์จากธรรมชาติ ในสไตล์ Honey Bee</p>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite">
+        <p class="loading">กำลังโหลดสินค้า...</p>
+      </div>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-image">
+        <img src="images/wild-honey.png" alt="น้ำผึ้งป่า Honey Bee ท่ามกลางบรรยากาศธรรมชาติ">
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">THE HONEY BEE STORY</p>
+        <h2>ความสุขเล็ก ๆ<br><em>ที่เริ่มจากธรรมชาติ</em></h2>
+        <p>Honey Bee เชื่อว่าความสุขบางครั้งก็เรียบง่ายเหมือนรสหวานจากน้ำผึ้ง เราจึงนำเสนอผลิตภัณฑ์น้ำผึ้ง 2 สูตร ให้คุณเลือกตามความชอบ พร้อมบรรยากาศอบอุ่นที่ได้แรงบันดาลใจจากสวนดอกไม้และผืนป่า</p>
+        <a class="text-link" href="#products">เลือกชมคอลเลกชัน <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="order-section section-wrap" id="order">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR HONEY, YOUR MOMENT</p>
+        <h2>สั่งซื้อสินค้า <em>Honey Bee</em></h2>
+        <p>เลือกสินค้าและกรอกข้อมูลเพื่อส่งคำสั่งซื้อ</p>
+      </div>
+      <div class="checkout-layout">
+        <div class="cart-panel">
+          <h3>รายการที่เลือก</h3>
+          <div id="cart-items" class="cart-items"><p class="empty-cart">ยังไม่มีสินค้าในตะกร้า</p></div>
+          <div class="cart-total"><span>ยอดรวม</span><strong id="cart-total">฿0</strong></div>
+        </div>
+        <form id="order-form" class="order-form">
+          <h3>ข้อมูลสำหรับติดต่อ</h3>
+          <label for="customerName">ชื่อผู้สั่งซื้อ <span>*</span></label>
+          <input id="customerName" name="customerName" autocomplete="name" required maxlength="120" placeholder="ชื่อ-นามสกุล">
+          <label for="contact">เบอร์โทรศัพท์ / Line <span>*</span></label>
+          <input id="contact" name="contact" required maxlength="120" placeholder="ช่องทางติดต่อ">
+          <label for="note">หมายเหตุ</label>
+          <textarea id="note" name="note" rows="3" maxlength="500" placeholder="รายละเอียดเพิ่มเติม (ถ้ามี)"></textarea>
+          <button class="button button-primary submit-button" id="submit-order" type="submit">ยืนยันคำสั่งซื้อ <span>→</span></button>
+          <p class="form-hint">เมื่อกดยืนยัน ระบบจะส่งข้อมูลคำสั่งซื้อไปยัง Google Sheets</p>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <a class="brand footer-brand" href="#home"><span class="brand-bee">🐝</span><span>honey <b>bee</b><small>PURE HONEY · NATURAL GOODNESS</small></span></a>
+    <p>หอมหวานจากธรรมชาติ เติมความละมุนให้ทุกวัน</p>
+    <small>© <span id="year"></span> Honey Bee. All rights reserved.</small>
+  </footer>
+</body>
+</html>
